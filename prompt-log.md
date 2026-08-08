@@ -1,5 +1,3 @@
-
-
 July 31, 2026 — Stage 0 Bio Revision
 
 
@@ -21,4 +19,28 @@ Prompt: Help me plan and review a 300–400-word executive memo for Scenario 3, 
 
 
 How I used the response: I drafted each section in my own words and used the feedback to verify the currency calculations, explain the hedge trade-offs clearly, complete the project roadmap, and reduce the memo to the required word count.
+
+
+
+\## 2026-08-07 — Stage 2 Technical Specification
+
+
+
+\*\*Task:\*\* Develop validation rules for the FX hedging model.
+
+
+
+\*\*Prompt used:\*\* “Can you solve it and make it copy and pasteable?”
+
+
+
+\*\*AI suggestion:\*\* ChatGPT proposed a validation table covering required inputs, formula checks, interest-rate parity, the option floor, sensitivity scenarios, and error messages.
+
+
+
+\*\*My review and changes:\*\* I renamed several validation labels, clarified the failure actions, and simplified the descriptions while keeping the required formulas and 0.5% parity tolerance unchanged.
+
+
+
+\*\*Final decision:\*\* I retained the required formulas and named ranges but revised the explanations to reflect my own understanding of the model.
 
