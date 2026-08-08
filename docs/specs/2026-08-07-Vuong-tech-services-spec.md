@@ -2,7 +2,7 @@
 
 &#x20; <div style="color: #024731; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.85rem;">University of Hawaiʻi at Mānoa · Shidler College of Business</div>
 
-&#x20; <div style="color: #000000; font-weight: 700; font-size: 1.25rem; margin-top: 4px;">FIN-321 International Finance \&amp; Securities</div>
+&#x20; <div style="color: #000000; font-weight: 700; font-size: 1.25rem; margin-top: 4px;">FIN-321 International Finance &amp; Securities</div>
 
 &#x20; <div style="color: #525252; font-weight: 400; font-size: 0.95rem;">FX Transaction Hedging Project — Technical Specification</div>
 
@@ -12,7 +12,7 @@
 
 <!--
 
-BRAND FORMATTING — applied per docs/\_branding/design.json (v1.0.0)
+BRAND FORMATTING — applied per docs/_branding/design.json (v1.0.0)
 
 &#x20; ┌─ Colors ─────────────────────────────────────────────────────────────┐
 
@@ -64,13 +64,12 @@ BRAND FORMATTING — applied per docs/\_branding/design.json (v1.0.0)
 
 &#x20; └──────────────────────────────────────────────────────────────────────┘
 
-&#x20; Full brand standard: docs/\_branding/design.json · Source: https://manoa.hawaii.edu/brand/
-
-\-->
+&#x20; Full brand standard: docs/_branding/design.json · Source: https://manoa.hawaii.edu/brand/
 
 
 
-\# U.S. Tech Services Firm — FX Transaction Hedge Model · Technical Specification
+
+# U.S. Tech Services Firm — FX Transaction Hedge Model · Technical Specification
 
 
 
@@ -82,33 +81,33 @@ BRAND FORMATTING — applied per docs/\_branding/design.json (v1.0.0)
 
 |------|------|
 
-| \*\*Created by\*\* | Timmy Vuong |
+| **Created by** | Timmy Vuong |
 
-| \*\*Updated by\*\* | Timmy Vuong |
+| **Updated by** | Timmy Vuong |
 
-| \*\*Date Created\*\* | 2026-08-07 |
+| **Date Created** | 2026-08-07 |
 
-| \*\*Date Updated\*\* | 2026-08-07 |
+| **Date Updated** | 2026-08-07 |
 
-| \*\*Version\*\* | 0.1 |
+| **Version** | 0.1 |
 
-| \*\*LLM Used\*\* (optional) | ChatGPT — explanation and feedback |
+| **LLM Used** (optional) | ChatGPT — explanation and feedback |
 
-| \*\*Role\*\* | Treasury Analyst / FP\&A Analyst |
+| **Role** | Treasury Analyst / FP&A Analyst |
 
-| \*\*Audience\*\* | CFO / Director of Treasury |
+| **Audience** | CFO / Director of Treasury |
 
-| \*\*Companion Workbook\*\* | `docs/spreadsheets/International Finance Spreadsheets.xlsx` (Chapter 8 Transaction Hedging tabs — reference/worked example) or student build |
-
-
-
-\---
+| **Companion Workbook** | `docs/spreadsheets/International Finance Spreadsheets.xlsx` (Chapter 8 Transaction Hedging tabs — reference/worked example) or student build |
 
 
 
+---
 
 
-\## 1. Problem Statement
+
+
+
+## 1. Problem Statement
 
 
 
@@ -122,7 +121,7 @@ The proposed model will compare an unhedged position with forward, money-market,
 
 
 
-\## 2. Inputs — Named-Range Contract
+## 2. Inputs — Named-Range Contract
 
 > All placeholder values are indicative and will be replaced with live market data during Stage 4.
 
@@ -132,27 +131,27 @@ The proposed model will compare an unhedged position with forward, money-market,
 
 |---|---|---:|---|---|
 
-| `FC\_AMT` | Foreign-currency receivable | 12,500,000 | EUR | Company contract |
+| `FC_AMT` | Foreign-currency receivable | 12,500,000 | EUR | Company contract |
 
-| `S0\_in` | Current EUR/USD spot rate | TBD | USD per EUR | Live FX market data |
+| `S0_in` | Current EUR/USD spot rate | TBD | USD per EUR | Live FX market data |
 
-| `F0\_in` | One-year EUR/USD forward rate | 1.0910 | USD per EUR | Live forward quote |
+| `F0_in` | One-year EUR/USD forward rate | 1.0910 | USD per EUR | Live forward quote |
 
-| `R\_USD` | Annual USD interest rate | TBD | Decimal annual rate | Live USD market rate |
+| `R_USD` | Annual USD interest rate | TBD | Decimal annual rate | Live USD market rate |
 
-| `R\_FC` | Annual EUR interest rate | TBD | Decimal annual rate | Live EUR market rate |
+| `R_FC` | Annual EUR interest rate | TBD | Decimal annual rate | Live EUR market rate |
 
-| `K\_PUT` | EUR put-option strike rate | TBD | USD per EUR | Live option quote |
+| `K_PUT` | EUR put-option strike rate | TBD | USD per EUR | Live option quote |
 
-| `K\_CALL` | EUR call-option strike rate | TBD | USD per EUR | Live option quote |
+| `K_CALL` | EUR call-option strike rate | TBD | USD per EUR | Live option quote |
 
-| `PREM\_PUT` | EUR put-option premium | 0.017 | USD per EUR | Live option quote |
+| `PREM_PUT` | EUR put-option premium | 0.017 | USD per EUR | Live option quote |
 
-| `PREM\_CALL` | EUR call-option premium | 0.022 | USD per EUR | Live option quote |
+| `PREM_CALL` | EUR call-option premium | 0.022 | USD per EUR | Live option quote |
 
-| `T\_DAYS` | Days until settlement | 365 | Days | Contract settlement terms |
+| `T_DAYS` | Days until settlement | 365 | Days | Contract settlement terms |
 
-\## 3. Tab Architecture
+## 3. Tab Architecture
 
 | Workbook Tab | Purpose |
 
@@ -172,9 +171,9 @@ The proposed model will compare an unhedged position with forward, money-market,
 
 | Sensitivity | |
 
-| Notes \& Assumptions | |
+| Notes & Assumptions | |
 
-\## 4. Assumptions \& Constraints
+## 4. Assumptions & Constraints
 
 ACT/360: Divide the actual number of days by 360 when calculating interest.
 
@@ -190,29 +189,29 @@ Parity check: The money-market hedge should produce a result reasonably close to
 
 Placeholder data: Stage 2 uses preliminary figures; Stage 4 replaces them with live rates and quotes.
 
-\## 5. Calculation Flow
+## 5. Calculation Flow
 
 
 
-\### Forward Hedge
+### Forward Hedge
 
 
 
 
 
-\*\*Formula\*\*
+**Formula**
 
 
 
-`USD\_FORWARD = FC\_AMT × F0\_in`
+`USD_FORWARD = FC_AMT × F0_in`
 
 
 
-\*\*Placeholder calculation\*\*
+**Placeholder calculation**
 
 
 
-`USD\_FORWARD = EUR 12,500,000 × 1.0910 USD/EUR = USD 13,637,500`
+`USD_FORWARD = EUR 12,500,000 × 1.0910 USD/EUR = USD 13,637,500`
 
 
 
@@ -220,21 +219,21 @@ U.S. Tech Services Firm would sell its expected EUR 12.5 million receivable forw
 
 
 
-\### Money-Market Hedge
+### Money-Market Hedge
 
-\### Money-Market Hedge
-
-
-
-\*\*Calculation flow\*\*
+### Money-Market Hedge
 
 
 
-1\. `EUR\_BORROW = FC\_AMT / (1 + R\_FC × T\_DAYS / 360)`
+**Calculation flow**
 
-2\. `USD\_NOW = EUR\_BORROW × S0\_in`
 
-3\. `USD\_MM = USD\_NOW × (1 + R\_USD × T\_DAYS / 360)`
+
+1. `EUR_BORROW = FC_AMT / (1 + R_FC × T_DAYS / 360)`
+
+2. `USD_NOW = EUR_BORROW × S0_in`
+
+3. `USD_MM = USD_NOW × (1 + R_USD × T_DAYS / 360)`
 
 
 
@@ -242,23 +241,23 @@ For U.S. Tech Services Firm, the model will first calculate the amount of euros 
 
 
 
-\### Option Hedge
+### Option Hedge
 
 
 
-\*\*Formula\*\*
+**Formula**
 
 
 
-`USD\_PUT = FC\_AMT × MAX(S\_T, K\_PUT) - (FC\_AMT × PREM\_PUT)`
+`USD_PUT = FC_AMT × MAX(S_T, K_PUT) - (FC_AMT × PREM_PUT)`
 
 
 
-\*\*Known premium cost\*\*
+**Known premium cost**
 
 
 
-`PUT\_PREMIUM\_COST = EUR 12,500,000 × 0.017 USD/EUR = USD 212,500`
+`PUT_PREMIUM_COST = EUR 12,500,000 × 0.017 USD/EUR = USD 212,500`
 
 
 
@@ -266,13 +265,13 @@ U.S. Tech Services Firm could purchase an EUR put option covering its EUR 12.5 m
 
 
 
-\## 6. Sensitivity Plan
+## 6. Sensitivity Plan
 
 The sensitivity analysis will evaluate settlement exchange rates ranging from 95% to 105% of the initial EUR/USD spot rate. The model will use the following 11 scenarios:
 
 
 
-0.95 × S0\_in, 0.96 × S0\_in, 0.97 × S0\_in, 0.98 × S0\_in, 0.99 × S0\_in, 1.00 × S0\_in, 1.01 × S0\_in, 1.02 × S0\_in, 1.03 × S0\_in, 1.04 × S0\_in, and 1.05 × S0\_in
+0.95 × S0_in, 0.96 × S0_in, 0.97 × S0_in, 0.98 × S0_in, 0.99 × S0_in, 1.00 × S0_in, 1.01 × S0_in, 1.02 × S0_in, 1.03 × S0_in, 1.04 × S0_in, and 1.05 × S0_in
 
 
 
@@ -280,19 +279,19 @@ For each settlement rate, the model will calculate:
 
 
 
-No hedge: USD\_UNHEDGED = 12,500,000 × S\_T
+No hedge: USD_UNHEDGED = 12,500,000 × S_T
 
-Forward hedge: USD\_FORWARD = USD 13,637,500
+Forward hedge: USD_FORWARD = USD 13,637,500
 
-Money-market hedge: USD\_MM, calculated using the EUR and USD interest rates
+Money-market hedge: USD_MM, calculated using the EUR and USD interest rates
 
-Put-option hedge: USD\_PUT = 12,500,000 × MAX(S\_T, K\_PUT) − 212,500
+Put-option hedge: USD_PUT = 12,500,000 × MAX(S_T, K_PUT) − 212,500
 
 
 
 The results will be presented in a line chart with the settlement EUR/USD rate on the horizontal axis and USD proceeds on the vertical axis. The chart will show the put option’s protected floor, the fixed proceeds from the forward and money-market hedges, and any exchange rates where the preferred strategy changes. Exact results will be populated after live market inputs are added during Stage 4.
 
-\## 7. Validation Rules
+## 7. Validation Rules
 
 
 
@@ -302,25 +301,25 @@ The results will be presented in a line chart with the settlement EUR/USD rate o
 
 | Required named ranges       | All ten required names exist and contain numeric values.                                                      | Display `CHECK INPUTS`.                      |
 
-| Input boundaries            | `FC\_AMT`, `S0\_in`, `F0\_in`, `K\_PUT`, `K\_CALL`, and `T\_DAYS` are greater than zero; premiums are not negative. | Highlight the invalid input.                 |
+| Input boundaries            | `FC_AMT`, `S0_in`, `F0_in`, `K_PUT`, `K_CALL`, and `T_DAYS` are greater than zero; premiums are not negative. | Highlight the invalid input.                 |
 
-| Forward calculation         | `USD\_FORWARD` equals `FC\_AMT × F0\_in`, allowing for rounding to the nearest cent.                             | Display `FORWARD ERROR`.                     |
+| Forward calculation         | `USD_FORWARD` equals `FC_AMT × F0_in`, allowing for rounding to the nearest cent.                             | Display `FORWARD ERROR`.                     |
 
-| Implied forward rate        | `F\_IMPLIED = S0\_in × (1 + R\_USD × T\_DAYS / 360) / (1 + R\_FC × T\_DAYS / 360)`.                                 | Display the difference from `F0\_in`.         |
+| Implied forward rate        | `F_IMPLIED = S0_in × (1 + R_USD × T_DAYS / 360) / (1 + R_FC × T_DAYS / 360)`.                                 | Display the difference from `F0_in`.         |
 
-| Interest-rate parity        | The relative difference between `F\_IMPLIED` and `F0\_in` is no more than 0.5%.                                 | Flag the result for review.                  |
+| Interest-rate parity        | The relative difference between `F_IMPLIED` and `F0_in` is no more than 0.5%.                                 | Flag the result for review.                  |
 
-| Money-market reconciliation | `USD\_MM` is within 0.5% of `USD\_FORWARD` when contemporaneous rates are used.                                 | Display `PARITY CHECK`.                      |
+| Money-market reconciliation | `USD_MM` is within 0.5% of `USD_FORWARD` when contemporaneous rates are used.                                 | Display `PARITY CHECK`.                      |
 
-| Put-option floor            | `USD\_PUT` is never below `FC\_AMT × K\_PUT − FC\_AMT × PREM\_PUT`.                                                | Display `OPTION ERROR`.                      |
+| Put-option floor            | `USD_PUT` is never below `FC_AMT × K_PUT − FC_AMT × PREM_PUT`.                                                | Display `OPTION ERROR`.                      |
 
-| Sensitivity range           | The table contains 11 scenarios from `0.95 × S0\_in` through `1.05 × S0\_in` in 1% increments.                  | Display `RANGE ERROR`.                       |
+| Sensitivity range           | The table contains 11 scenarios from `0.95 × S0_in` through `1.05 × S0_in` in 1% increments.                  | Display `RANGE ERROR`.                       |
 
 | Missing data                | Blank, text-based, or invalid market inputs do not produce financial outputs.                                 | Display a clear warning instead of a result. |
 
 
 
-\## 8. Outputs
+## 8. Outputs
 
 
 
@@ -336,9 +335,9 @@ The completed workbook will provide the following decision-oriented outputs for 
 
 | Forward proceeds          | Show the placeholder locked proceeds of `USD 13,637,500`, calculated using the 1.0910 forward rate. |
 
-| Option cost and floor     | Show the `USD 212,500` put premium and the protected minimum proceeds after `K\_PUT` is populated.   |
+| Option cost and floor     | Show the `USD 212,500` put premium and the protected minimum proceeds after `K_PUT` is populated.   |
 
-| Effective conversion rate | Calculate `USD proceeds ÷ FC\_AMT` for each strategy.                                                |
+| Effective conversion rate | Calculate `USD proceeds ÷ FC_AMT` for each strategy.                                                |
 
 | Difference from no hedge  | Calculate each strategy’s USD gain or loss relative to the unhedged position.                       |
 
@@ -351,6 +350,4 @@ The completed workbook will provide the following decision-oriented outputs for 
 
 
 The outputs will support a preliminary comparison of hedge alternatives. A final hedge recommendation will not be issued until the model is populated with live data and independently validated in later stages.
-
-
 
