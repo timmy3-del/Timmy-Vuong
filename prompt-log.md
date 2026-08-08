@@ -69,4 +69,17 @@ How I used the response: I drafted each section in my own words and used the fee
 \*\*Final decision:\*\* I retained the completed workbook after confirming that the model responded correctly to the three input tests, the formulas recalculated properly, and the Cover sheet returned to `MODEL STATUS PASS`.
 
 
+## 2026-08-08 — Stage 4 Market Data and Population
+
+**Task:** Replace the Stage 3 placeholder assumptions with sourced market data, calculate the CIP-implied forward, populate the workbook, and cross-check the results.
+
+**Prompt used:** “Help me complete Stage 4 for Scenario 3. Find reputable sources for the latest EUR/USD spot rate and one-year USD and EUR rates, show the covered-interest-parity forward calculation, and guide me through documenting and entering the values into my workbook.”
+
+**AI suggestion:** ChatGPT identified the ECB EUR/USD reference rate, the FRED one-year U.S. Treasury rate, and the ECB one-year euro-area government yield. It calculated a CIP-implied forward of 1.170681 and suggested setting both option strikes equal to the live spot rate of 1.1535 while retaining the scenario-provided premiums.
+
+**My review and changes:** I recorded each value, source, observation date, and rationale in the market-data memo. I entered the live values only through the named-range input cells and confirmed that the Cover sheet showed `MODEL STATUS PASS`. I also checked that the Sensitivity table and chart recalculated around the new spot rate.
+
+**Final decision:** I retained the sourced values and CIP-implied forward after comparing the workbook with the course FX Hedging Lab. The forward, money-market, put, and sensitivity results matched, with only insignificant rounding differences. No structural formula corrections were required.
+
+
 
