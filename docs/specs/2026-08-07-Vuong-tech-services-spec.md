@@ -154,24 +154,16 @@ The proposed model will compare an unhedged position with forward, money-market,
 ## 3. Tab Architecture
 
 | Workbook Tab | Purpose |
-
 |---|---|
+| Cover | Model title, author, version, date, and summary. |
+| Legend/Key | Color, input, formula, output, and named-range conventions. |
+| Inputs | Values, units, sources, and dates for all ten named inputs. |
+| Forward Hedge | Fixed USD proceeds using the forward rate. |
+| Money-Market Hedge | EUR borrowing, spot conversion, and USD investment calculations. |
+| Option Hedge | Put and call payoffs, premiums, and USD proceeds. |
+| Sensitivity | Eleven exchange-rate scenarios and the comparison chart. |
+| Notes & Assumptions | Conventions, limitations, sources, and model changes. |
 
-| Cover | |
-
-| Legend/Key | |
-
-| Inputs | |
-
-| Forward Hedge | |
-
-| Money-Market Hedge | |
-
-| Option Hedge | |
-
-| Sensitivity | |
-
-| Notes & Assumptions | |
 
 ## 4. Assumptions & Constraints
 
@@ -221,7 +213,6 @@ U.S. Tech Services Firm would sell its expected EUR 12.5 million receivable forw
 
 ### Money-Market Hedge
 
-### Money-Market Hedge
 
 
 
