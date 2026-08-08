@@ -28,7 +28,7 @@ BRAND FORMATTING — applied per docs/_branding/design.json (v1.0.0)
 
 &#x20; │ UH-green 700 (hover) .... #013D26  (link hover, pressed state)       │
 
-&#x20; │ UH-green 50 (tint) ...... #E6F2EF  (callout backgrounds)             │
+&#x20; │ UH-green 50 (tint) ...... #E6F2EF  (callout backgrounds)             │F
 
 &#x20; │ Yellow (Excel only) ..... #FFFF00  (input highlight — not brand)     │
 
@@ -152,26 +152,16 @@ The proposed model will compare an unhedged position with forward, money-market,
 | `T_DAYS` | Days until settlement | 365 | Days | Contract settlement terms |
 
 ## 3. Tab Architecture
-
 | Workbook Tab | Purpose |
-
 |---|---|
-
-| Cover | |
-
-| Legend/Key | |
-
-| Inputs | |
-
-| Forward Hedge | |
-
-| Money-Market Hedge | |
-
-| Option Hedge | |
-
-| Sensitivity | |
-
-| Notes & Assumptions | |
+| Cover | Model title, author, version, date, and summary. |
+| Legend/Key | Color, input, formula, output, and named-range conventions. |
+| Inputs | Values, units, sources, and retrieval dates for all ten named inputs. |
+| Forward Hedge | Fixed USD proceeds using the forward rate. |
+| Money-Market Hedge | EUR borrowing, spot conversion, and USD investment calculations. |
+| Option Hedge | Put and call payoffs, premiums, and USD proceeds. |
+| Sensitivity | Eleven exchange-rate scenarios and the comparison chart. |
+| Notes & Assumptions | Conventions, limitations, sources, and model changes. |
 
 ## 4. Assumptions & Constraints
 
@@ -218,8 +208,6 @@ Placeholder data: Stage 2 uses preliminary figures; Stage 4 replaces them with l
 U.S. Tech Services Firm would sell its expected EUR 12.5 million receivable forward at the one-year rate of 1.0910 USD per EUR. This would lock in USD 13,637,500 at settlement and protect the company if the euro weakens. However, the company would not benefit if the euro strengthens above the contracted forward rate.
 
 
-
-### Money-Market Hedge
 
 ### Money-Market Hedge
 

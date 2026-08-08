@@ -44,3 +44,29 @@ How I used the response: I drafted each section in my own words and used the fee
 
 \*\*Final decision:\*\* I retained the required formulas and named ranges but revised the explanations to reflect my own understanding of the model.
 
+
+
+\## 2026-08-08 — Stage 3 AI-Assisted Build
+
+
+
+\*\*Task:\*\* Build and troubleshoot the Excel FX transaction-hedging model for Scenario 3.
+
+
+
+\*\*Prompt used:\*\* “Help me build and troubleshoot a formula-driven Excel workbook for a U.S. Tech Services Firm expecting a EUR 12,500,000 receivable in one year. The workbook should compare no hedge, a forward hedge, a money-market hedge, a EUR put, and a EUR call reference. It should also include sensitivity analysis, named ranges, validation checks, and the required formatting.”
+
+
+
+\*\*AI suggestion:\*\* ChatGPT helped develop the workbook structure, formulas, named ranges, strategy calculations, sensitivity table, chart, and validation checks. It also helped identify and correct formula-reference problems that initially caused Excel errors.
+
+
+
+\*\*My review and changes:\*\* I opened the workbook in Excel, reviewed the input values and formulas, and personally completed three audit tests. I changed `FC\_AMT`, `S0\_in`, and `K\_PUT` individually and observed how the Cover, Sensitivity, and Checks sheets responded. I documented the results in my Stage 3 build-audit note and restored every input to its original value after testing.
+
+
+
+\*\*Final decision:\*\* I retained the completed workbook after confirming that the model responded correctly to the three input tests, the formulas recalculated properly, and the Cover sheet returned to `MODEL STATUS PASS`.
+
+
+
