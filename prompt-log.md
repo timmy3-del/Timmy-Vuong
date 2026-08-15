@@ -81,5 +81,23 @@ How I used the response: I drafted each section in my own words and used the fee
 
 **Final decision:** I retained the sourced values and CIP-implied forward after comparing the workbook with the course FX Hedging Lab. The forward, money-market, put, and sensitivity results matched, with only insignificant rounding differences. No structural formula corrections were required.
 
+## 2026-08-14 — Stage 5 Validation and Hedge Recommendation
+
+**Task:** Independently validate the FX hedging workbook, investigate differences, manually verify three calculations, and prepare a recommendation for the CFO.
+
+**Prompts used:**
+
+1. “Using only the two attached documents, independently calculate the complete FX hedge analysis, including the unhedged position, forward hedge, money-market hedge, put option, call reference, and results at several settlement EUR/USD rates. Show your assumptions and calculations, identify the trade-offs, and recommend a hedging strategy for the CFO.”
+
+2. “Help me compare the independent LLM results with my Excel workbook, understand the differences, and verify the forward, money-market, and EUR put calculations.”
+
+3. “Review my hedge-recommendation memo for clarity, accuracy, organization, and executive tone.”
+
+**AI assistance:** ChatGPT produced the independent analysis from the Stage 2 specification and Stage 4 market-data memo. It also explained the validation process, checked my arithmetic after I completed the manual calculations, helped identify rounding as the cause of the reported differences, and provided feedback on the organization and wording of my memo.
+
+**My review and changes:** I copied the workbook results, calculated the comparison differences, and personally completed the forward, money-market, and EUR put verification calculations. I confirmed that the workbook and independent analysis agreed within rounding. I then drafted the recommendation in my own words and revised it to clarify the exposure, strategy trade-offs, implementation steps, and limitations.
+
+**Final decision:** I retained the validated calculations and selected the forward hedge as the recommended strategy because it provides approximately $14,633,513 of predictable USD proceeds without an upfront option premium. I also noted that the company must obtain an executable dealer quote before implementation.
+
 
 
